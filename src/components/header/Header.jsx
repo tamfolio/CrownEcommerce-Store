@@ -4,9 +4,9 @@ import { connect } from 'react-redux'
 import { auth } from '../../firebase/firebase.utils'
 import { ReactComponent as Logo } from '../../assets/4.3 crown.svg'
 import CartIcon from '../cart-icon/cart-icon';
-import Cart from '../cart-dropdown/cart-dropdown';
 
 import './Header.scss'
+import CartDropdown from '../cart-dropdown/cart-dropdown';
 
 const Header = ({ currentUser }) => (
     <div className='header'>
@@ -31,7 +31,7 @@ const Header = ({ currentUser }) => (
         )}
         <CartIcon/>
       </div>
-      <Cart/>
+      <CartDropdown/>
     </div>
   );
   
